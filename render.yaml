@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: vygruzka-backend
+    name: vygruzka-chats
     runtime: node
     plan: free
     buildCommand: npm install
@@ -10,10 +10,8 @@ services:
       - key: NODE_VERSION
         value: 20
       - key: SUPABASE_URL
-        sync: false          # введёте в панели Render
-      - key: SUPABASE_SERVICE_ROLE_KEY
-        sync: false          # введёте в панели Render
-      - key: API_TOKEN
-        generateValue: true  # Render сам создаст случайный токен
-      - key: ALLOWED_ORIGIN
-        value: "*"
+        sync: false          # https://<project-id>.supabase.co
+      - key: SUPABASE_ANON_KEY
+        sync: false          # публичный ключ anon / publishable
+      - key: ICE_SERVERS
+        sync: false          # необязательно: TURN-серверы для звонков (JSON)
