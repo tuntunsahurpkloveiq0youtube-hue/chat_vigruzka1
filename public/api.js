@@ -1,7 +1,7 @@
 // Клиент для вашего интерфейса: подключите перед основным скриптом и вызывайте вместо localStorage.
 // Если фронтенд лежит на том же Render-сервисе, API_URL оставьте пустым.
 const API_URL = '';              // например 'https://vygruzka-backend.onrender.com'
-const API_TOKEN = '';            // тот же, что API_TOKEN в Render (если включили)
+const API_TOKEN = 'f9efb5a94ced00f9f3b565a0a70f15a951c4d2c481beec58'; // тот же, что API_TOKEN в Render
 
 async function api(method, url, body) {
   const r = await fetch(API_URL + url, {
