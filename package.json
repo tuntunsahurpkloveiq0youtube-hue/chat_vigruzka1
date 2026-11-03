@@ -1,6 +1,6 @@
 {
-  "name": "vygruzka-backend",
-  "version": "1.0.0",
+  "name": "vygruzka-chats",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
   "main": "server.js",
@@ -10,8 +10,6 @@
   },
   "engines": { "node": ">=20" },
   "dependencies": {
-    "@supabase/supabase-js": "^2.45.0",
-    "cors": "^2.8.5",
     "express": "^4.19.2"
   }
 }
